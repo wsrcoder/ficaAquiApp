@@ -1,0 +1,309 @@
+:root {
+  --primary-blue: #002D8C; /* Azul escuro do novo design */
+}
+
+/* Container padrão para centralizar o conteúdo em todas as seções */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.main-header {
+  background: #fff;
+  padding: 20px 0;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+}
+
+.main-header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  text-decoration: none;
+}
+
+.nav-menu ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-menu a {
+  color: #555;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.login-btn {
+  background: var(--primary-blue);
+  color: white;
+  padding: 10px 30px;
+  margin-right: 50px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.hero {
+  padding: 80px 0;
+  background: #fbfbfd; /* Fundo levemente cinza */
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.hero-content {
+  flex: 1; /* Ocupa metade do espaço */
+}
+
+.hero-image {
+  flex: 1; /* Ocupa a outra metade */
+  position: relative;
+}
+
+.hero-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: var(--primary-blue);
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  color: #666;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.btn-primary {
+  background: var(--primary-blue);
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex; align-items: center; gap: 8px;
+}
+
+.btn-secondary {
+  background: #fff;
+  color: var(--primary-blue);
+  padding: 12px 24px;
+  border: 1px solid var(--primary-blue);
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex; align-items: center; gap: 8px;
+}
+
+/* Estilo para a Prova Social */
+.hero-badge {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.avatar-group { display: flex; }
+.avatar-group img {
+  width: 35px; height: 35px; border-radius: 50%;
+  border: 2px solid white; margin-left: -10px;
+}
+.avatar-group img:first-child { margin-left: 0; }
+.stars { color: #ffcc00; font-size: 0.8rem; }
+.badge-text p { font-size: 0.9rem; margin: 0; color: #555; }
+
+.bento {
+  padding: 80px 0;
+  background: #fbfbfd;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  color: var(--primary-blue);
+  font-size: 2rem;
+}
+
+.bento-container {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: repeat(2, 250px);
+  gap: 20px;
+}
+
+.bento-item {
+  border-radius: 20px;
+  overflow: hidden; /* Garante que a imagem não saia das bordas arredondadas */
+  position: relative; /* Pai precisa ser relative para a imagem ser absolute */
+  border: 1px solid #eee;
+  transition: all 0.3s ease;
+  display: flex;
+}
+
+/* --- A MÁGICA DA IMAGEM --- */
+.card-image-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Faz a imagem preencher o espaço sem distorcer */
+  z-index: 0; /* Fica atrás de tudo */
+  transition: transform 0.5s ease;
+}
+
+.bento-item:hover .card-image-bg {
+  transform: scale(1.1); /* Efeito de zoom elegante no hover */
+}
+
+/* Conteúdo sobre a imagem */
+.card-content {
+  position: relative;
+  z-index: 2; /* Fica acima da imagem e do overlay */
+  padding: 30px;
+  width: 100%;
+}
+
+/* --- ESTILOS ESPECÍFICOS --- */
+
+.card-1 {
+  grid-column: 1;
+  grid-row: span 2;
+  color: white;
+  align-items: flex-end;
+}
+
+.card-bg-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100%; height: 100%;
+  background: linear-gradient(to top, rgba(0, 35, 106, 0.8), transparent);
+  z-index: 1;
+}
+
+.card-2 {
+  grid-column: 2 / span 2;
+  grid-row: 1;
+  background-color: #fff;
+  align-items: center;
+}
+
+/* Ajuste para a imagem da nutrição ficar na direita como no design */
+.img-right {
+  left: auto;
+  right: 0;
+  width: 60%; /* Ocupa só a parte direita */
+  object-position: center;
+}
+
+.card-2 .card-content {
+  max-width: 45%; /* Texto não passa por cima da comida */
+}
+
+.card-3 {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: #fff4d1;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-4 {
+  grid-column: 3;
+  grid-row: 2;
+  background-color: #e6f9f3;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Opacidade para imagens de fundo nos cards coloridos */
+.opacity-30 {
+  opacity: 0.3;
+}
+
+/* Tipografia */
+.bento-item .icon { font-size: 2rem; margin-bottom: 10px; display: block; }
+.bento-item h3 { color: var(--primary-blue); font-size: 1.2rem; margin-bottom: 8px; }
+.card-1 h3 { color: white; }
+.bento-item p { color: #666; font-size: 0.9rem; line-height: 1.4; }
+.card-1 p { color: #ddd; }
+.main-footer {
+  background-color: #fff;
+  padding: 40px 0;
+  border-top: 1px solid #f0f0f0;
+  margin-top: 60px; /* Garante um respiro da seção anterior */
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--primary-blue);
+  text-decoration: none;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.footer-brand p {
+  color: #888;
+  font-size: 0.85rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-links a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: var(--primary-blue);
+}
+
+/* Responsividade básica para o Footer */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+  
+  .footer-links {
+    justify-content: center;
+  }
+}
