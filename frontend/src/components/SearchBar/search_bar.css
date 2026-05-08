@@ -1,0 +1,111 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: var(--color-white);
+    border-radius: 100px;
+    padding: 8px 10px 8px 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    /* Ensuring the container doesn't shrink awkwardly */
+    min-height: 70px;
+}
+
+.search-zone {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+/* Typography & Labels */
+.text-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.label {
+    font-size: 0.65rem;
+    font-weight: 800;
+    color: var(--color-text-placeholder);
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+/* The Select Area */
+.filter-select-input {
+    border: none;
+    background: transparent;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    font-weight: 800; /* Bold text from your concept */
+    color: var(--color-text-main);
+    cursor: pointer;
+    outline: none;
+    appearance: none; /* Removes default arrow */
+    padding-right: 5px;
+    margin-top: -2px;
+}
+
+/* Vertical Line */
+.vertical-divider {
+    width: 1px;
+    height: 40px;
+    background-color: #eee;
+    margin: 0 25px;
+}
+
+/* Input Area - This pushes the button to the end */
+.input-zone {
+    flex: 1; 
+    display: flex;
+    align-items: center;
+}
+
+.search-input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: var(--font-sans);
+    font-size: 0.95rem;
+    color: var(--color-text-main);
+    padding-left: 10px;
+}
+
+.search-input::placeholder {
+    color: var(--color-text-placeholder);
+    font-style: italic;
+}
+
+/* Icons */
+.bi-filter, .icon-magnifier {
+    color: var(--color-text-placeholder);
+    font-size: 1.2rem;
+}
+
+.icon-chevron {
+    font-size: 0.7rem;
+    color: var(--color-primary);
+    margin-left: -15px; /* Pulls it closer to the select text */
+    pointer-events: none; /* Allows clicks to pass through to the select */
+}
+
+/* The Button */
+.btn-search {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border: none;
+    padding: 15px 45px;
+    border-radius: 50px;
+    font-family: var(--font-sans);
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+}
+
+.btn-search:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-1px);
+}

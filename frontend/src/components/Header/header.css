@@ -1,0 +1,68 @@
+.main-header {
+  width: 100%;
+  padding: 30px 0; /* More vertical space like the image */
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent; /* No background color so the image shows through */
+  z-index: 100;
+}
+
+.header-container {
+  max-width: 1400px; /* Wider container for that spacious feel */
+  margin: 0 auto;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand {
+  font-family: var(--font-serif); /* This will now use Playfair Display */
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-serif);
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #4a5d4b; /* Darker sage for the text */
+  cursor: pointer;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link {
+  font-family: var(--font-sans); /* This will use Inter */
+  text-decoration: none;
+  color: var(--color-text-main);
+  font-weight: 500;
+  font-size: 1rem;
+  transition: opacity 0.3s ease;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+.btn-register {
+  font-family: var(--font-sans); /* This will use Inter */
+  background-color: var(--color-primary); /* Exact Sage Green from concept-6.jpg */
+  color: var(--color-white);
+  border: none;
+  padding: 14px 28px;
+  border-radius: 25px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase; /* "CADASTRAR UNIDADE" */
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.btn-register:hover{
+  background-color: var(--color-primary-dark);
+}

@@ -1,0 +1,16 @@
+
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Inherits 100% from #root */
+  width: 100%;
+  overflow: hidden; /* The window itself never scrolls */
+}
+
+.main-content {
+  flex: 1; /* This fills the space between Header and Footer automatically */
+  display: flex;
+  flex-direction: column;
+  min-height: 0; /* The Edge fix we talked about! */
+}

@@ -1,0 +1,14 @@
+
+
+.home-page {
+  /* Subtract your Header height here. If header is 80px, use 80px */
+  flex: 1;
+  /*height: 100%;*/ /* Or flex: 1; */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* This prevents the "extra" white space from being scrollable */
+  background-color: var(--color-bg-warm);
+
+  min-height: 0;
+}
+

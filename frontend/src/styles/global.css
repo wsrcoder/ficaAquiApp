@@ -1,0 +1,61 @@
+
+
+/*Simple reset */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+    /* This prevents the layout from 'jumping' when a scrollbar appears */
+  scrollbar-gutter: stable;
+}
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  /* This prevents the 'double scrollbar' we saw in Edge */
+  overflow: hidden; 
+}
+
+body{
+    font-family: var(--font-sans);
+    background-color: var(--white);
+    color: var(--text-main);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialized;
+}
+
+/* Base Headings */
+
+h1 {
+    font-family: var(--font-serif);
+    font-weight: 500;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+}
+
+/* Helper class for the warm section */
+
+.bg-warm{
+    background-color: var(--bg-warm-beige);
+}
+
+/* Buttons*/
+
+.btn-primary {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border: none;
+    padding: 12px 30px;
+    border-radius: var(--border-radius-lg);
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}

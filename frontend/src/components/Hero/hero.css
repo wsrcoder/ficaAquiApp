@@ -1,0 +1,41 @@
+
+/* Hero.css */
+
+
+.hero {
+  flex: 1.5;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  text-align: center;
+  /* If the header is floating, this padding protects the title */
+  padding-top: 2rem; 
+}
+
+.hero-title {
+  font-family: var(--font-serif);
+  font-size: 3.5rem;
+  font-weight: 800; /* Matching your "Bold" preference */
+  color: var(--text-main);
+  margin-top: 10rem; 
+  margin-bottom: 1rem;
+  line-height: 1.1; /* Keeps the big text tight and modern */
+}
+
+.hero-subtitle {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    /* This is the magic line for centered blocks */
+    margin-left: auto;
+    margin-right: auto;
+    
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 3rem;
+}
+

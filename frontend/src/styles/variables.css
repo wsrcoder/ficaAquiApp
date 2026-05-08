@@ -1,0 +1,31 @@
+
+
+:root {
+
+  /* Brand Colors */
+/* Main Theme Colors */
+  --color-primary: #6b7c6c;        /* Sage Green */
+  --color-primary-dark: #4a5d4b;   /* Deep Sage */
+  
+  /* Background Tones */
+  --color-bg-warm: #f2ede4;        /* The warm beige from the top half */
+  --color-bg-card: #fdfcf9;       /* The very light off-white for card faces */
+  --color-bg-footer: #ede7db;      /* A slightly deeper beige for the bottom */
+  
+  /* Text & Borders */
+  --color-text-main: #2d332d;
+  --color-text-muted: #6b706b;
+  --color-border: #e2ddd3;         /* A beige-tinted border */
+  --color-text-placeholder: #ccc;
+  --color-white: #ffffff;
+
+  /* Typography */
+  --font-serif: 'Playfair Display', serif; /* For the main headline */
+  --font-sans: 'Inter', sans-serif;         /* For navigation and body */
+
+  /* Layout & Spacing */
+  --max-width: 1200px;
+  --border-radius-lg: 50px;   /* For the search bar */
+  --border-radius-md: 20px;   /* For the feature cards */
+  --section-padding: 80px 20px;
+}

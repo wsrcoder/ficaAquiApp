@@ -1,0 +1,82 @@
+
+
+.bento-container{
+    flex: 1; /* this tells the section to take up remaining space in the 85vh*/
+    padding: 40px 80px; /* Aligns with the width of your Hero content*/
+    background-color: var(--color-bg-footer);
+}
+
+
+.bento-grid{
+    display: grid;
+    /*2fr 1fr 1fr means the first collumn is twice as wide the others*/
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    height: 100%;
+}
+
+.bento-card{
+    background-color: var(--color-bg-card); 
+    border: 1px solid var(--color-border);
+    border-radius: 24px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*align content to the left*/
+    justify-content: flex-end;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+}
+
+.bento-card:hover{
+    transform: translate(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08);
+    background-color: var(--color-white);
+    border-color: var(--color-primary);
+}
+
+.card-tag{
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-size: 0.6rem;
+    padding: 4px 10px;
+    border-radius: 20px;
+    width: fit-content;
+    margin-bottom: 10px;
+}
+
+.card-icon{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    padding: 12px;
+    border-radius: 12px;
+    color: var(--color-primary);
+    display: flex;
+    width: fit-content;
+}
+
+.card-title{
+    font-family: var(--font-serif);
+    font-size: 1.2rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 10px;
+}
+
+.card-subtitle{
+    font-size: 0.9rem;
+    color: var(--color-text-mutted);
+    line-height: 1.5;
+}
+
+.bento-card h3{
+    font-family: var(--font-serif);
+    color: var(--color-primary-dark);
+    margin-bottom: 10px;
+}
+
+.bento-card p{
+    font-size: 0.9rem;
+    color: var(--color-text-mutted);
+    line-height: 1.4;
+}
