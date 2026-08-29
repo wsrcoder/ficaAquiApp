@@ -14,6 +14,7 @@ builder.Services.AddDbContext<DataContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("SqlServerConnection")));
 
 builder.Services.AddScoped<IUserService, UserService>();
+builder.Services.AddScoped<ICareFacilityService, CareFacilityService>();
 
 var app = builder.Build();
 

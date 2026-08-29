@@ -1,4 +1,5 @@
-﻿using backend.Models;
+﻿using backend.Entities;
+using backend.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Identity.Client;
 
@@ -14,5 +15,6 @@ namespace backend.DB
         }
 
         public DbSet<User>  Users { get; set; } 
+        public DbSet<CareFacility> CareFacilities { get; set; }
     }
 }
